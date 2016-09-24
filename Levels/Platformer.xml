@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="9" version="2.1" version_name="Godot Engine v2.1.stable.official">
+	<ext_resource path="res://Assets/sprites/animated/walk_cycle_test.png" type="Texture" index="2"></ext_resource>
+	<ext_resource path="res://tilemap_2.res" type="TileSet" index="0"></ext_resource>
+	<ext_resource path="res://Assets/scripts/player_logic.gd" type="Script" index="1"></ext_resource>
+	<resource type="RectangleShape2D" path="local://1">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2 name="extents"> 23.6186, 26.4858 </vector2>
+
+	</resource>
+	<resource type="Animation" path="local://4">
+		<string name="resource/name"> "idle" </string>
+		<real name="length"> 1 </real>
+		<bool name="loop"> True </bool>
+		<real name="step"> 0.1 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> ".:frame" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<bool name="tracks/0/imported"> False </bool>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "times" </string>
+			<real_array  len="1"> 				0 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="1"> 				1 </real_array>
+			<string> "update" </string>
+			<int> 1 </int>
+			<string> "values" </string>
+			<array  len="1" shared="false">
+				<int> 0 </int>
+			</array>
+		</dictionary>
+
+	</resource>
+	<resource type="Animation" path="local://3">
+		<string name="resource/name"> "jump" </string>
+		<real name="length"> 0.4 </real>
+		<bool name="loop"> False </bool>
+		<real name="step"> 0.1 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> ".:frame" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<bool name="tracks/0/imported"> False </bool>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 0.4 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "update" </string>
+			<int> 0 </int>
+			<string> "values" </string>
+			<array  len="2" shared="false">
+				<int> 5 </int>
+				<int> 9 </int>
+			</array>
+		</dictionary>
+
+	</resource>
+	<resource type="Animation" path="local://5">
+		<string name="resource/name"> "walk_left" </string>
+		<real name="length"> 0.5 </real>
+		<bool name="loop"> True </bool>
+		<real name="step"> 0.1 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> ".:frame" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<bool name="tracks/0/imported"> False </bool>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 0.5 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "update" </string>
+			<int> 0 </int>
+			<string> "values" </string>
+			<array  len="2" shared="false">
+				<int> 0 </int>
+				<int> 4 </int>
+			</array>
+		</dictionary>
+		<string name="tracks/1/type"> "value" </string>
+		<node_path name="tracks/1/path"> ".:flip_h" </node_path>
+		<int name="tracks/1/interp"> 1 </int>
+		<bool name="tracks/1/imported"> False </bool>
+		<dictionary name="tracks/1/keys" shared="false">
+			<string> "times" </string>
+			<real_array  len="1"> 				0 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="1"> 				1 </real_array>
+			<string> "update" </string>
+			<int> 1 </int>
+			<string> "values" </string>
+			<array  len="1" shared="false">
+				<bool> True </bool>
+			</array>
+		</dictionary>
+
+	</resource>
+	<resource type="Animation" path="local://2">
+		<string name="resource/name"> "walk_right" </string>
+		<real name="length"> 0.5 </real>
+		<bool name="loop"> True </bool>
+		<real name="step"> 0.1 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> ".:frame" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<bool name="tracks/0/imported"> False </bool>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 0.5 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "update" </string>
+			<int> 0 </int>
+			<string> "values" </string>
+			<array  len="2" shared="false">
+				<int> 0 </int>
+				<int> 4 </int>
+			</array>
+		</dictionary>
+		<string name="tracks/1/type"> "value" </string>
+		<node_path name="tracks/1/path"> ".:flip_h" </node_path>
+		<int name="tracks/1/interp"> 1 </int>
+		<bool name="tracks/1/imported"> False </bool>
+		<dictionary name="tracks/1/keys" shared="false">
+			<string> "times" </string>
+			<real_array  len="1"> 				0 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="1"> 				1 </real_array>
+			<string> "update" </string>
+			<int> 1 </int>
+			<string> "values" </string>
+			<array  len="1" shared="false">
+				<bool> False </bool>
+			</array>
+		</dictionary>
+
+	</resource>
+	<main_resource>
+		<dictionary name="_bundled" shared="false">
+			<string> "conn_count" </string>
+			<int> 0 </int>
+			<string> "conns" </string>
+			<int_array  len="0"> 				 </int_array>
+			<string> "editable_instances" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "names" </string>
+			<string_array  len="73">
+				<string> "Node2D" </string>
+				<string> "transform/pos" </string>
+				<string> "transform/scale" </string>
+				<string> "TileMap" </string>
+				<string> "mode" </string>
+				<string> "tile_set" </string>
+				<string> "cell/size" </string>
+				<string> "cell/quadrant_size" </string>
+				<string> "cell/custom_transform" </string>
+				<string> "cell/half_offset" </string>
+				<string> "cell/tile_origin" </string>
+				<string> "cell/y_sort" </string>
+				<string> "collision/use_kinematic" </string>
+				<string> "collision/friction" </string>
+				<string> "collision/bounce" </string>
+				<string> "collision/layers" </string>
+				<string> "collision/mask" </string>
+				<string> "occluder/light_mask" </string>
+				<string> "tile_data" </string>
+				<string> "KinematicBody2D" </string>
+				<string> "input/pickable" </string>
+				<string> "shapes/0/shape" </string>
+				<string> "shapes/0/transform" </string>
+				<string> "shapes/0/trigger" </string>
+				<string> "collision/margin" </string>
+				<string> "script/script" </string>
+				<string> "Sprite" </string>
+				<string> "texture" </string>
+				<string> "vframes" </string>
+				<string> "hframes" </string>
+				<string> "frame" </string>
+				<string> "__meta__" </string>
+				<string> "anim" </string>
+				<string> "playback/process_mode" </string>
+				<string> "playback/default_blend_time" </string>
+				<string> "root/root" </string>
+				<string> "anims/idle" </string>
+				<string> "anims/jump" </string>
+				<string> "anims/walk_left" </string>
+				<string> "anims/walk_right" </string>
+				<string> "next/walk_left" </string>
+				<string> "playback/active" </string>
+				<string> "playback/speed" </string>
+				<string> "blend_times" </string>
+				<string> "autoplay" </string>
+				<string> "AnimationPlayer" </string>
+				<string> "CollisionShape2D" </string>
+				<string> "shape" </string>
+				<string> "trigger" </string>
+				<string> "_update_shape_index" </string>
+				<string> "Camera2D" </string>
+				<string> "anchor_mode" </string>
+				<string> "rotating" </string>
+				<string> "current" </string>
+				<string> "zoom" </string>
+				<string> "limit/left" </string>
+				<string> "limit/top" </string>
+				<string> "limit/right" </string>
+				<string> "limit/bottom" </string>
+				<string> "drag_margin/h_enabled" </string>
+				<string> "drag_margin/v_enabled" </string>
+				<string> "smoothing/enable" </string>
+				<string> "smoothing/speed" </string>
+				<string> "drag_margin/left" </string>
+				<string> "drag_margin/top" </string>
+				<string> "drag_margin/right" </string>
+				<string> "drag_margin/bottom" </string>
+				<string> "feet" </string>
+				<string> "enabled" </string>
+				<string> "cast_to" </string>
+				<string> "layer_mask" </string>
+				<string> "type_mask" </string>
+				<string> "RayCast2D" </string>
+			</string_array>
+			<string> "node_count" </string>
+			<int> 8 </int>
+			<string> "node_paths" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="204"> 				-1, -1, 0, 0, -1, 2, 1, 0, 2, 1, 0, 0, 0, 3, 3, -1, 15, 4, 2, 5, 3, 6, 4, 7, 5, 8, 6, 9, 7, 10, 2, 11, 8, 12, 8, 13, 9, 14, 10, 15, 11, 16, 11, 17, 11, 18, 12, 0, 0, 0, 19, 19, -1, 9, 1, 13, 20, 8, 21, 14, 22, 15, 23, 8, 15, 11, 16, 11, 24, 16, 25, 17, 0, 2, 0, 26, 26, -1, 6, 1, 18, 27, 19, 28, 7, 29, 20, 30, 11, 31, 21, 0, 3, 0, 45, 32, -1, 12, 33, 11, 34, 10, 35, 22, 36, 23, 37, 24, 38, 25, 39, 26, 40, 27, 41, 28, 42, 9, 43, 29, 44, 30, 0, 2, 0, 46, 46, -1, 5, 1, 31, 2, 32, 47, 14, 48, 8, 49, 2, 0, 2, 0, 50, 50, -1, 19, 1, 33, 2, 34, 51, 11, 52, 8, 53, 28, 54, 35, 55, 36, 56, 36, 57, 37, 58, 37, 59, 28, 60, 28, 61, 8, 62, 38, 63, 39, 64, 39, 65, 39, 66, 39, 31, 40, 0, 2, 0, 72, 67, -1, 6, 1, 41, 2, 42, 68, 28, 69, 43, 70, 11, 71, 44, 0 </int_array>
+			<string> "variants" </string>
+			<array  len="45" shared="false">
+				<vector2> 382.372, 236.111 </vector2>
+				<vector2> 1.18375, 1.18375 </vector2>
+				<int> 0 </int>
+				<resource  external="0">  </resource>
+				<vector2> 80, 80 </vector2>
+				<int> 16 </int>
+				<matrix32> 1, 0, 0, 1, 0, 0 </matrix32>
+				<int> 2 </int>
+				<bool> False </bool>
+				<real> 1 </real>
+				<real> 0 </real>
+				<int> 1 </int>
+				<int_array  len="884"> 					-589833, 1610612737, -589832, 1610612737, -589831, 1610612737, -589830, 1610612737, -589829, 1610612737, -589828, 1610612737, -589827, 1610612737, -589826, 1610612737, -589825, 1610612737, -655360, 1610612737, -655359, 1610612737, -655358, 1610612737, -655357, 1610612737, -655356, 536870913, -655355, 1610612737, -655354, 1610612737, -655353, 1610612737, -655352, 1610612737, -655351, 1610612737, -655350, 1610612737, -655349, 1610612737, -655348, 1610612737, -655347, 1610612737, -655346, 1610612737, -655345, 1610612737, -655344, 1610612737, -655343, 1610612737, -655342, 1610612737, -655341, 1610612737, -655340, 1610612737, -524297, 1610612737, -524296, 1610612737, -524295, 536870913, -524294, 536870913, -524293, 536870913, -524292, 536870913, -524291, 536870913, -524290, 536870913, -524289, 536870913, -589824, 536870913, -589823, 536870913, -589822, 536870913, -589821, 536870913, -589820, 536870913, -589819, 536870913, -589818, 536870913, -589817, 536870913, -589816, 536870913, -589815, 536870913, -589814, 536870913, -589813, 536870913, -589812, 536870913, -589811, 536870913, -589810, 536870913, -589809, 536870913, -589808, 536870913, -589807, 536870913, -589806, 536870913, -589805, 536870913, -589804, 1610612737, -458761, 1610612737, -458760, 1610612737, -458759, 536870913, -458758, 536870913, -458757, 536870913, -458756, 536870913, -458755, 1610612739, -458754, 1610612738, -458753, 1610612738, -524288, 1610612738, -524287, 1610612738, -524286, 1610612738, -524285, 1073741827, -524284, 536870913, -524283, 536870913, -524282, 536870913, -524281, 536870913, -524280, 536870913, -524279, 536870913, -524278, 536870913, -524277, 536870913, -524276, 536870913, -524275, 536870913, -524274, 536870913, -524273, 536870913, -524272, 536870913, -524271, 536870913, -524270, 536870913, -524269, 536870913, -524268, 1610612737, -393225, 1610612737, -393224, 1610612737, -393223, 536870913, -393222, 536870913, -393221, 536870913, -393220, 536870913, -393219, 1610612736, -458749, 1073741828, -458748, 1610612738, -458747, 1610612738, -458746, 1610612738, -458745, 1610612738, -458744, 1610612738, -458743, 1610612738, -458742, 1610612738, -458741, 1610612738, -458740, 1610612738, -458739, 1610612738, -458738, 1610612738, -458737, 1610612738, -458736, 1610612738, -458735, 1073741827, -458734, 536870913, -458733, 536870913, -458732, 1610612737, -327689, 1610612737, -327688, 1610612737, -327687, 536870913, -327686, 1610612739, -327685, 1073741826, -327684, 1073741826, -327683, 1610612740, -393199, 1073741824, -393198, 536870913, -393197, 536870913, -393196, 1610612737, -262153, 1610612737, -262152, 1610612737, -262151, 536870913, -262150, 536870912, -327663, 0, -327662, 536870913, -327661, 536870913, -327660, 1610612737, -196617, 1610612737, -196616, 1610612737, -196615, 536870913, -196614, 536870912, -262144, 4, -262143, 2, -262142, 536870916, -262139, 4, -262138, 536870914, -262137, 536870914, -262136, 536870914, -262135, 2, -262134, 536870914, -262133, 536870916, -262127, 1073741824, -262126, 536870913, -262125, 536870913, -262124, 1610612737, -131081, 1610612737, -131080, 1610612737, -131079, 536870913, -131078, 536870912, -131074, 4, -131073, 2, -196608, 3, -196607, 1, -196606, 1610612736, -196603, 1073741828, -196602, 1610612738, -196601, 1610612738, -196600, 1610612738, -196599, 1610612738, -196598, 1610612738, -196597, 1610612740, -196591, 1073741824, -196590, 536870913, -196589, 536870913, -196588, 1610612737, -65545, 1610612737, -65544, 1610612737, -65543, 536870913, -65542, 536870915, -65541, 536870914, -65540, 536870914, -65539, 2, -65538, 3, -65537, 536870913, -131072, 1, -131071, 1, -131070, 1610612736, -131059, 4, -131058, 536870916, -131055, 1073741824, -131054, 536870913, -131053, 536870913, -131052, 1610612737, -9, 1610612737, -8, 1610612737, -7, 536870913, -6, 536870913, -5, 536870913, -4, 536870913, -3, 1073741825, -2, 1073741825, -1, 1073741825, -65536, 1, -65535, 1, -65534, 1610612736, -65525, 4, -65524, 2, -65523, 3, -65522, 1610612736, -65519, 1073741824, -65518, 536870913, -65517, 536870913, -65516, 1610612737, 65527, 1610612737, 65528, 1610612737, 65529, 536870913, 65530, 536870913, 65531, 536870913, 65532, 536870913, 65533, 1073741825, 65534, 1073741825, 65535, 1073741825, 0, 1610612739, 1, 1610612738, 2, 1610612740, 4, 4, 5, 2, 6, 2, 7, 2, 8, 2, 9, 2, 10, 2, 11, 3, 12, 1610612737, 13, 1610612737, 14, 1610612736, 17, 1073741824, 18, 536870913, 19, 536870913, 20, 1610612737, 131063, 1610612737, 131064, 1610612737, 131065, 536870913, 131066, 536870913, 131067, 536870913, 131068, 1610612739, 131069, 1073741826, 131070, 1073741826, 131071, 1073741826, 65536, 1610612740, 65540, 1073741828, 65541, 1073741826, 65542, 1073741826, 65543, 1073741826, 65544, 1073741826, 65545, 1073741826, 65546, 1073741826, 65547, 1073741826, 65548, 1610612738, 65549, 1610612738, 65550, 1610612740, 65553, 1073741824, 65554, 536870913, 65555, 536870913, 65556, 1610612737, 196599, 1610612737, 196600, 1610612737, 196601, 536870913, 196602, 536870913, 196603, 536870913, 196604, 1610612736, 131089, 1073741824, 131090, 536870913, 131091, 536870913, 131092, 1610612737, 262135, 1610612737, 262136, 1610612737, 262137, 536870913, 262138, 536870913, 262139, 536870913, 262140, 1610612736, 196625, 1073741824, 196626, 536870913, 196627, 536870913, 196628, 1610612737, 327671, 1610612737, 327672, 1610612737, 327673, 536870913, 327674, 536870913, 327675, 536870913, 327676, 1610612736, 262161, 1073741824, 262162, 536870913, 262163, 536870913, 262164, 1610612737, 393207, 1610612737, 393208, 1610612737, 393209, 536870913, 393210, 536870913, 393211, 536870913, 393212, 536870915, 393213, 536870914, 393214, 536870914, 393215, 536870914, 327680, 536870914, 327681, 536870914, 327682, 536870914, 327683, 536870914, 327684, 536870914, 327685, 536870914, 327686, 536870914, 327687, 536870914, 327688, 536870914, 327689, 536870914, 327690, 536870914, 327691, 536870914, 327692, 536870914, 327693, 536870914, 327694, 536870914, 327695, 536870914, 327696, 536870914, 327697, 3, 327698, 536870913, 327699, 536870913, 327700, 1610612737, 458743, 1610612737, 458744, 1610612737, 458745, 536870913, 458746, 536870913, 458747, 536870913, 458748, 536870913, 458749, 536870913, 458750, 536870913, 458751, 536870913, 393216, 536870913, 393217, 536870913, 393218, 536870913, 393219, 536870913, 393220, 536870913, 393221, 536870913, 393222, 536870913, 393223, 536870913, 393224, 536870913, 393225, 536870913, 393226, 536870913, 393227, 536870913, 393228, 536870913, 393229, 536870913, 393230, 536870913, 393231, 536870913, 393232, 536870913, 393233, 536870913, 393234, 536870913, 393235, 536870913, 393236, 1610612737, 524279, 1610612737, 524280, 1610612737, 524281, 536870913, 524282, 536870913, 524283, 536870913, 524284, 536870913, 524285, 536870913, 524286, 536870913, 524287, 536870913, 458752, 536870913, 458753, 536870913, 458754, 536870913, 458755, 536870913, 458756, 536870913, 458757, 536870913, 458758, 536870913, 458759, 536870913, 458760, 536870913, 458761, 536870913, 458762, 536870913, 458763, 536870913, 458764, 536870913, 458765, 536870913, 458766, 536870913, 458767, 536870913, 458768, 536870913, 458769, 536870913, 458770, 536870913, 458771, 536870913, 458772, 1610612737, 589815, 1610612737, 589816, 1610612737, 589817, 536870913, 589818, 536870913, 589819, 536870913, 589820, 536870913, 589821, 536870913, 589822, 536870913, 589823, 536870913, 524288, 536870913, 524289, 536870913, 524290, 536870913, 524291, 536870913, 524292, 536870913, 524293, 536870913, 524294, 536870913, 524295, 536870913, 524296, 536870913, 524297, 536870913, 524298, 536870913, 524299, 536870913, 524300, 536870913, 524301, 536870913, 524302, 536870913, 524303, 536870913, 524304, 536870913, 524305, 536870913, 524306, 536870913, 524307, 536870913, 524308, 1610612737, 655351, 1610612737, 655352, 1610612737, 655353, 536870913, 655354, 536870913, 655355, 536870913, 655356, 536870913, 655357, 536870913, 655358, 536870913, 655359, 536870913, 589824, 536870913, 589825, 536870913, 589826, 536870913, 589827, 536870913, 589828, 536870913, 589829, 536870913, 589830, 536870913, 589831, 536870913, 589832, 536870913, 589833, 536870913, 589834, 536870913, 589835, 536870913, 589836, 536870913, 589837, 536870913, 589838, 536870913, 589839, 536870913, 589840, 536870913, 589841, 536870913, 589842, 536870913, 589843, 536870913, 589844, 1610612737 </int_array>
+				<vector2> -286.794, -196.182 </vector2>
+				<resource  resource_type="Shape2D" path="local://1">  </resource>
+				<matrix32> 0.530947, -0, 0, 1.30151, -22.5065, -8.70773 </matrix32>
+				<real> 0.08 </real>
+				<resource  external="1">  </resource>
+				<vector2> -22.1052, -5.64246 </vector2>
+				<resource  external="2">  </resource>
+				<int> 5 </int>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<node_path> ".." </node_path>
+				<resource  resource_type="Animation" path="local://4">  </resource>
+				<resource  resource_type="Animation" path="local://3">  </resource>
+				<resource  resource_type="Animation" path="local://5">  </resource>
+				<resource  resource_type="Animation" path="local://2">  </resource>
+				<string> "" </string>
+				<bool> True </bool>
+				<array  len="0" shared="false">
+				</array>
+				<string> "idle" </string>
+				<vector2> -22.5065, -8.70773 </vector2>
+				<vector2> 0.530947, 1.30151 </vector2>
+				<vector2> -23.5456, -6.42916 </vector2>
+				<vector2> 0.435586, 1.14836 </vector2>
+				<vector2> 1, 1 </vector2>
+				<int> -10000000 </int>
+				<int> 10000000 </int>
+				<real> 5 </real>
+				<real> 0.2 </real>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> -23.5519, 23.3322 </vector2>
+				<vector2> 0.237593, 0.356389 </vector2>
+				<vector2> 0, 10 </vector2>
+				<int> 15 </int>
+			</array>
+			<string> "version" </string>
+			<int> 2 </int>
+		</dictionary>
+
+	</main_resource>
+</resource_file>
